@@ -37,7 +37,7 @@ public class MainApp extends Application {
      */
     public void initRootLayout() {
         try {
-            // Loaroot layout from fxml file.
+            // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
