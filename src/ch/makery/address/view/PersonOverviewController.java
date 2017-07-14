@@ -52,20 +52,21 @@ public class PersonOverviewController {
      * after the fxml file has been loaded.
      */
     @FXML
-    private void initialize(){
-        //Initialize the person table with two columns.
+    private void initialize() {
+        // Initialize the person table with the two columns.
         firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
         lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
     }
-        /**
-         * Is called by the main application to give a reference back to itself.
-         * 
-         * @param mainApp
-         */
-        public void setMainApp(MainApp mailApp) {
-            this.mainApp = mainApp;
-            
-            // Add observable list data to the table
-            personTable.setItems(mainApp.getPersonData());
-        }
+
+    /**
+     * Is called by the main application to give a reference back to itself.
+     * 
+     * @param mainApp
+     */
+    public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
+
+        // Add observable list data to the table
+        personTable.setItems(mainApp.getPersonData());
+    }
 }

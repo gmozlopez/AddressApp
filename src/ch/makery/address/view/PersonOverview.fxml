@@ -31,7 +31,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="333.0">
                <children>
                   <Label layoutX="31.0" layoutY="27.0" text="Person Details" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
-                  <GridPane fx:id="streetLabel" layoutX="5.0" layoutY="79.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+                  <GridPane layoutX="5.0" layoutY="79.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -47,7 +47,7 @@
                      <children>
                         <Label fx:id="firstNameLabel" text="First Name" />
                         <Label fx:id="lastNameLabel" text="Last Name" GridPane.rowIndex="1" />
-                        <Label text="Street" GridPane.rowIndex="2" />
+                        <Label fx:id="streetLabel" text="Street" GridPane.rowIndex="2" />
                         <Label fx:id="cityLabel" text="City" GridPane.rowIndex="3" />
                         <Label fx:id="postalCodeLabel" text="Postal Code" GridPane.rowIndex="4" />
                         <Label fx:id="birthdayLabel" text="Birthday" GridPane.rowIndex="5" />
