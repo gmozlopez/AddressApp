@@ -48,7 +48,7 @@ public class PersonEditDialogController {
      * Sets the stage of this dialog.
      * @param dialogStage
      */
-    public void setDialogStage(Stage dalogStage) {
+    public void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
     }
     
